@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cinders-additions",
+	"version": "${version}",
+	"name": "Cinder's Additions",
+	"description": "This is an experiment!",
+	"authors": [
+		"Burning!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/cinders-additions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.burning.cindersadditions.CindersAdditions"
+		],
+		"fabric-datagen": [
+			"net.burning.cindersadditions.CindersAdditionsDataGenerator"
+		],
+		"client": [
+			"net.burning.cindersadditions.CindersAdditionsClient"
+		]
+	},
+	"mixins": [
+		"cinders-additions.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
